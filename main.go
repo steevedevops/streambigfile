@@ -76,7 +76,7 @@ func sendFile(size int) error {
 func main() {
 	go func() {
 		time.Sleep(2 * time.Second)
-		sendFile(8000)
+		sendFile(1000)
 	}()
 	server := &FileServer{}
 	server.start()
